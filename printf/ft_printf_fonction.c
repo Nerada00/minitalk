@@ -6,12 +6,11 @@
 /*   By: abdmessa <abdmessa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 18:24:24 by abdmessa          #+#    #+#             */
-/*   Updated: 2024/02/28 00:30:44 by abdmessa         ###   ########.fr       */
+/*   Updated: 2024/03/10 18:52:39 by abdmessa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../src/minitalk.h"
-
 
 int	ft_putchar(int c)
 {
@@ -25,7 +24,7 @@ int	ft_putstr(char *str)
 
 	i = 0;
 	if (str == NULL)
-		return (write (1, "(null)", 6));
+		return (write(1, "(null)", 6));
 	while (str[i])
 	{
 		write(1, &str[i], 1);

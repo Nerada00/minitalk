@@ -6,12 +6,11 @@
 /*   By: abdmessa <abdmessa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 18:23:56 by abdmessa          #+#    #+#             */
-/*   Updated: 2024/02/28 00:38:22 by abdmessa         ###   ########.fr       */
+/*   Updated: 2024/03/10 18:52:42 by abdmessa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../src/minitalk.h"
-
 
 int	ft_count_h(unsigned long int nb, unsigned long int b)
 {

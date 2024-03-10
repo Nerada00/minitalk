@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   client.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abdmessa <abdmessa@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/10 18:52:59 by abdmessa          #+#    #+#             */
+/*   Updated: 2024/03/10 19:21:47 by abdmessa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "minitalk.h"
 
 static int	ft_atoi(const char *str)
@@ -52,11 +64,14 @@ int	main(int argc, char **argv)
 	if (argc == 3)
 	{
 		pid = ft_atoi(argv[1]);
+		if (pid <= 0)
+			return (ft_printf("Error\n"), 1);
 		while (argv[2][i] != '\0')
 		{
 			ft_sigc(pid, argv[2][i]);
 			i++;
 		}
+		ft_printf("Message recu\n");
 	}
 	else
 	{

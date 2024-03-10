@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   server.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abdmessa <abdmessa@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/10 18:53:15 by abdmessa          #+#    #+#             */
+/*   Updated: 2024/03/10 19:20:11 by abdmessa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "minitalk.h"
 
 void	ft_sigs(int sig)
@@ -32,7 +44,7 @@ int	main(int argc, char **argv)
 	{
 		signal(SIGUSR1, ft_sigs);
 		signal(SIGUSR2, ft_sigs);
-		pause ();
+		pause();
 	}
 	return (0);
 }
