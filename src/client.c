@@ -6,7 +6,7 @@
 /*   By: abdmessa <abdmessa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 18:52:59 by abdmessa          #+#    #+#             */
-/*   Updated: 2024/03/10 19:21:47 by abdmessa         ###   ########.fr       */
+/*   Updated: 2024/03/12 00:44:36 by abdmessa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,9 @@ int	main(int argc, char **argv)
 			ft_sigc(pid, argv[2][i]);
 			i++;
 		}
+		i = 0;
+		if (!argv[2][i])
+			return (1);
 		ft_printf("Message recu\n");
 	}
 	else
